@@ -1,0 +1,93 @@
+/* step-flow.css : ステップフロー図のスタイル（regmonkey_step_flow 拡張）
+ *
+ * 配色・サイズは step-flow.js が注入する <style> およびハウススタイルと一致させる．
+ * brand-primary #0e3666 / accent #206f83 / text #1a1a1a を使用．
+ * 列幅（grid-template-columns）は description 列数に応じて JS が直書きする．
+ */
+
+.step-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 0.62em;
+  line-height: 1.45;
+  width: 100%;
+  color: #1a1a1a;
+}
+
+/* ヘッダー行（key 名ラベル） */
+.step-flow__header {
+  display: grid;
+  column-gap: 1.2em;
+  font-weight: 700;
+  color: #1a1a1a;
+  border-bottom: 2px solid #0e3666;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.2em;
+}
+.step-flow__header-cell {
+  text-align: center; /* ヘッダーは中央揃え */
+}
+
+.step-flow__row {
+  display: grid;
+  column-gap: 1.2em;
+  align-items: start; /* セル上端を揃える（四角形の上端で揃う） */
+}
+
+/* 1 列目：下向き五角形のステップチップ（次のステップを下に指す）
+   POINT_HEIGHT = 0.9em（JS の定数と一致させること） */
+.step-flow__step {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.step-flow__chip {
+  position: relative;
+  background: #0e3666;
+  color: #fff;
+  font-weight: 700;
+  /* 下の頂点ぶんを padding-bottom に足し，文字は四角形部に収める */
+  padding: 0.4em 1em calc(0.4em + 0.9em) 1em;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 下辺中央が尖る五角形．上側四角形 = (高さ - 0.9em) */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 0.9em),
+    50% 100%,
+    0 calc(100% - 0.9em)
+  );
+}
+
+/* 2 列目以降：description カラム．文字は左揃え・縦位置は中央 */
+.step-flow__desc-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 横は左から開始 */
+  justify-content: center; /* 縦は中央（既定） */
+  text-align: left;
+}
+/* top-aligned: true のとき description 等を上揃え */
+.step-flow--top-aligned .step-flow__desc-cell {
+  justify-content: flex-start;
+}
+.step-flow__desc-cell ul {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style: square;
+  text-align: left;
+}
+.step-flow__desc-cell ul > li::marker {
+  color: #0e3666;
+  font-size: 1.2em;
+}
+.step-flow__desc-cell li {
+  margin: 0.12em 0;
+  color: #1a1a1a;
+}

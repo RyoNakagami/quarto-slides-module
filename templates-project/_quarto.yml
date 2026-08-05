@@ -1,0 +1,18 @@
+# Scaffolded by regmonkey-quarto-slides (@SLIDES@/scripts/init.sh)
+project:
+  # NOTE: `website` を推奨（quarto preview がサイトルート相対 URL でデッキを配信し，
+  # PDF/PPTX エクスポートスクリプトが安定して動作する）．
+  type: website
+  output-dir: _site
+  render:
+    - "notebook/"
+  preview:
+    port: 4649
+    browser: false
+
+website:
+  title: "Slides"
+  search: false
+
+execute:
+  freeze: auto

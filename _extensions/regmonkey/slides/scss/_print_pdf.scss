@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------------- */
+/*   Browser preview of ?print-pdf mode                                */
+/*   Reveal adds html.print-pdf and stacks all slides as .pdf-page in  */
+/*   .slides, but the default .reveal still has height/overflow:hidden */
+/*   from screen mode, clipping everything to page 1. The @media print */
+/*   block only fires during real printing (decktape), not preview.    */
+/* ------------------------------------------------------------------- */
+html.print-pdf,
+html.print-pdf body {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+html.print-pdf .reveal {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+html.print-pdf .reveal .slides {
+  overflow: visible !important;
+}

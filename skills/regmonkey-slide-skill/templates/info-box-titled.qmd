@@ -1,0 +1,81 @@
+## <スライドの結論を1文で>
+
+[サブメッセージを1文で(任意)]{.h2-submessage}
+
+{{< reveal_vspace 0.5em >}}
+
+::::: {.columns}
+:::: {.column width="50%"}
+
+:::{.info-box}
+
+[① <タイトル1>]{.info-box-title}
+
+:::{.info-contents .font-09 .lh-14}
+- 1点目を一文で．重要語は [ハイライト]{.regmonkey-bold} する
+- 2点目を一文で
+:::
+
+:::
+
+{{< reveal_vspace 0.3em >}}
+
+:::{.info-box}
+
+[② <タイトル2>]{.info-box-title}
+
+:::{.info-contents .font-09 .lh-14}
+- 1点目を一文で
+- 2点目を一文で
+:::
+
+:::
+
+::::
+:::: {.column width="50%"}
+
+:::{.info-box}
+
+[③ <タイトル3>]{.info-box-title}
+
+:::{.info-contents .font-09 .lh-14}
+- 1点目を一文で
+- 2点目を一文で
+:::
+
+:::
+
+{{< reveal_vspace 0.3em >}}
+
+:::{.info-box}
+
+[④ <タイトル4>]{.info-box-title}
+
+:::{.info-contents .font-09 .lh-14}
+- 1点目を一文で
+- 2点目を一文で
+:::
+
+:::
+
+::::
+:::::
+
+<!--
+RULES (絶対に守ること):
+
+1. `[...]{.info-box-title}` の行は **上下に必ず空行** を入れる．
+   - 直前の `:::{.info-box}` フェンスや直後の `:::{.info-contents}` フェンスとくっつくと
+     Pandoc が span として認識せず，タイトルが消える（または info-contents の中身に飲み込まれる）．
+2. 番号付けには `①②③④⑤⑥⑦⑧⑨⑩` を使う．
+3. フェンス階層は 5 / 4 / 3 / 3：
+     ::::: {.columns}            (5-colon, outermost)
+     :::: {.column}              (4-colon)
+     :::{.info-box}              (3-colon)
+     :::{.info-contents}         (3-colon — 同レベルだが LIFO で正しく閉じる)
+   `::::::` (6-colon) は Quarto の filter が警告を出すので使わない．
+4. `.info-box` は `.success-box` / `.warning-box` / `.caution-box` / `.danger-box`
+   にそのまま差し替え可．構造は同じ．
+5. 同じスライドで多用するときは `.font-09` + `.lh-14` で密度を確保．
+   2 列 × 3 行（6 ボックス）まで 1 スライドに収まる．
+-->

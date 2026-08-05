@@ -1,0 +1,342 @@
+
+/* ------------------------------------------------------------------- */
+/*                          Book                                       */
+/* ------------------------------------------------------------------- */
+.book-image {
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: transparent;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+.book-image img {
+  width: 80% !important;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.book-info {
+  width: 50%;
+  height: 100%;
+}
+
+.book-info h3 {
+  text-align: left !important;
+  text-decoration: underline;
+  padding-top: 0.5em;
+  font-size: 32px !important;
+  padding-top: 1em;
+}
+
+.book-info ul {
+  list-style: none;
+  padding-left: 0em;
+}
+
+.book-info ul li {
+  padding-left: 1em;
+  /* Indentation for bullets */
+  display: list-item;
+}
+
+.book-info ul>li::before {
+  content: "✔";
+  margin-left: -1.35em;
+  padding-right: 0.5em;
+  display: inline-block;
+  /* Keeps the checkmark inline with text */
+}
+
+.book-info ul li ul {
+  list-style: disc;
+  /* Reveal default: • */
+}
+
+.book-info ul li ul li {
+  list-style-type: disc !important;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding-left: 0em;
+  /* Indentation for bullets */
+  margin-bottom: 0em !important;
+  /* Indentation for bullets */
+  margin-top: 0.1em !important;
+  /* Indentation for bullets */
+}
+
+.book-info ul li ul li::before {
+  content: none;
+  /* Remove custom checkmark */
+  display: none;
+}
+
+.book-info table td {
+  border-bottom: 1px solid $dark-gray;
+  /* light gray border */
+  white-space: normal;
+  /* Allow line wrapping */
+  word-wrap: break-word;
+  /* Break long words if needed */
+  overflow-wrap: break-word;
+  /* Modern equivalent */
+  font-size: 0.9em !important;
+}
+
+.book-info table th {
+  white-space: normal;
+  /* Allow line wrapping */
+  word-wrap: break-word;
+  /* Break long words if needed */
+  overflow-wrap: break-word;
+  /* Modern equivalent */
+}
+
+.book-info table tr td:nth-child(1),
+.book-info table tr th:nth-child(1) {
+  width: 30%;
+  font-weight: bold !important;
+}
+
+.book-info table tr td:nth-child(2),
+.book-info table tr th:nth-child(2) {
+  width: 70%;
+}
+
+/* ------------------------------------------------------------------- */
+/*                 Research Paper Style                                */
+/* ------------------------------------------------------------------- */
+.research-paper-style {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: $brand-text;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  background: transparent;
+}
+
+.research-paper-style h1,
+.research-paper-style h2,
+.research-paper-style h3 {
+  margin-top: 2em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.research-paper-style h1 {
+  font-size: 2em;
+  border-bottom: 2px solid $muted-gray;
+  padding-bottom: 0.3em;
+}
+
+.research-paper-style h2 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
+
+.research-paper-style h3 {
+  font-size: 1.2em;
+  margin-top: 1.2em;
+}
+
+.research-paper-style h4 {
+  font-size: 1.1em;
+  margin-top: 1.1em;
+}
+
+.research-paper-style .section {
+  margin-bottom: 3em;
+}
+
+.research-paper-style .takeaway {
+  margin: 1em 0;
+  line-height: 1.3;
+}
+
+.research-paper-style p {
+  margin: 1em 0;
+  text-align: justify;
+}
+
+/* ------------------------------------------------------------------- */
+/*                        meta slide                                   */
+/* ------------------------------------------------------------------- */
+.lecture-content-container {
+  background: transparent;
+  border-top: 2px solid $divider-gray;
+  border-bottom: 2px solid $divider-gray;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.lecture-content-container .content-block {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1em;
+  margin: 0;
+  box-shadow: none;
+  flex: 1;
+  width: 100%;
+}
+
+.lecture-content-container .content-block .header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: $brand-text;
+  margin-bottom: 0.5em;
+}
+
+.lecture-content-container .content-divider {
+  /* width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #3b82f6 0px,
+    #3b82f6 16px,
+    transparent 16px,
+    transparent 16px
+  ); */
+  margin: 0;
+  align-self: stretch;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.difficulty-star {
+  color: #ffd700;
+  font-size: 1.2em;
+}
+
+.difficulty-star.empty {
+  color: #e5e7eb;
+}
+
+.checkbox {
+  width: 1.4em;
+  height: 1.4em;
+  border: 3px solid #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.item-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.item-group .title-item {
+  font-size: 1em;
+  font-weight: bold;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+.checkbox-filled {
+  background-color: #2563eb;
+  color: white;
+}
+
+.checkbox-empty {
+  background-color: white;
+}
+
+.check-icon {
+  font-size: 1em;
+}
+
+/* ------------------------------------------------------------------- */
+/*                         Hotizontal tree                             */
+/* ------------------------------------------------------------------- */
+.horizontal-tree-container .tree {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.horizontal-tree-container .tree li {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 5px 0 5px;
+  position: relative;
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+}
+
+.horizontal-tree-container .tree li::before,
+.horizontal-tree-container .tree li::after {
+  content: "";
+  left: -20px;
+  position: absolute;
+  right: auto;
+}
+
+.horizontal-tree-container .tree li::before {
+  border-left: 1px solid #999;
+  bottom: 50px;
+  height: 100%;
+  top: 0;
+  width: 1px;
+}
+
+.horizontal-tree-container .tree li::after {
+  border-top: 1px solid #999;
+  height: 20px;
+  top: 25px;
+  width: 25px;
+}
+
+.horizontal-tree-container .tree li a {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #999;
+  border-radius: 0px;
+  display: inline-block;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.horizontal-tree-container .tree li.parent_hide>a {
+  padding: 3px 10px 3px 23px;
+  color: #333;
+}
+
+.horizontal-tree-container .tree>ul>li::before,
+.horizontal-tree-container .tree>ul>li::after {
+  border: 0;
+}
+
+.horizontal-tree-container .tree li:last-child::before {
+  height: 25px;
+}
+
+.horizontal-tree-container .tree li>ul {
+  padding-left: 70px;
+}
+
+[id^="parent_"] li:last-child::before {
+  height: 26px;
+}
+

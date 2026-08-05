@@ -1,0 +1,10 @@
+{
+  "name": "regmonkey-quarto-slides",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PPTX export tooling for regmonkey-quarto-slides (playwright + pptxgenjs)",
+  "devDependencies": {
+    "playwright": "^1.59.1",
+    "pptxgenjs": "^4.0.1"
+  }
+}

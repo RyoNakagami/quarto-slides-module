@@ -1,0 +1,513 @@
+
+/* ------------------------------------------------------------------- */
+/*                   main message                                      */
+/* ------------------------------------------------------------------- */
+.main-message-block {
+  background-color: #ffffffff;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  font-size: 32px !important;
+  line-height: 1.1;
+}
+
+.main-message-box {
+  border: 4px solid $brand-primary;
+  border-radius: 1px;
+  background-color: #ffffffff;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 32px !important;
+  line-height: 1.1;
+}
+
+.h2-submessage {
+  color: $brand-primary;
+  font-size: 1.3em;
+  font-weight: bold !important;
+  padding-top: 0.2em;
+}
+
+/* ------------------------------------------------------------------- */
+/*                   keypoints-block                                   */
+/* ------------------------------------------------------------------- */
+.keypoints-container {
+  width: 100%;
+  height: 90%;
+  /* 画面全体 */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* ← align children to the left */
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.vertical-keypoints-block {
+  line-height: 1.1;
+  font-size: 100%;
+  overflow: auto;
+  display: block;
+  padding-top: 0.5em;
+  margin-bottom: 20px;
+  margin-left: 1em;
+  /* ← adds 1em space from left */
+}
+
+.vertical-keypoints-block .block {
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+  margin-bottom: 0em;
+  border-bottom: 2px solid $muted-gray;
+  /* 下線を追加 */
+  display: block !important;
+}
+
+.vertical-keypoints-block .no-border-block {
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+  margin-bottom: 0em;
+  display: block !important;
+}
+
+.vertical-keypoints-block .block p,
+.vertical-keypoints-block .no-border-block p {
+  margin-top: 8px;
+  padding-left: 1em;
+}
+
+.vertical-keypoints-block .block ul,
+.vertical-keypoints-block .no-border-block ul {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1em;
+}
+
+.vertical-keypoints-block .block ul li,
+.vertical-keypoints-block .no-border-block ul li {
+  margin-top: 0.35em !important;
+}
+
+.vertical-keypoints-block .block.last-block {
+  border-bottom: none;
+}
+
+.vertical-keypoints-block .block.first-block,
+.vertical-keypoints-block .no-border-block.first-block {
+  padding-top: 0 !important;
+}
+
+.vertical-keypoints-block .block .block-header,
+.vertical-keypoints-block .no-border-block .block-header {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 0em;
+  max-width: 100%;
+  margin-bottom: -0.25em !important;
+  margin-right: 0em;
+  font-weight: bold;
+  margin-left: -0.85em !important;
+}
+
+.vertical-keypoints-block .block .block-header-centered,
+.vertical-keypoints-block .no-border-block .block-header-centered {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 0em;
+  max-width: 100%;
+  margin-bottom: -0.25em !important;
+  margin-right: 0em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.vertical-keypoints-block .block .block-header-centered p,
+.vertical-keypoints-block .no-border-block .block-header-centered p {
+  padding-left: 0.5em !important;
+}
+
+/* ------------------------------------------------------------------- */
+/*                         checkbox-block                              */
+/* ------------------------------------------------------------------- */
+
+.checkbox2::before {
+  content: "";
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.5em;
+  border: 2px solid $accent-blue;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.checkbox2.checked::before,
+.checkbox2.active::before {
+  content: "✓";
+  color: white;
+  background-color: $accent-blue;
+  text-align: center;
+  line-height: 0.85em;
+  font-size: 0.85em;
+}
+
+/* ------------------------------------------------------------------- */
+/*             horizontal keypoints-block                              */
+/* ------------------------------------------------------------------- */
+
+.horizontal-keypoints-block,
+.horizontal-keypoints-block-no-border {
+  line-height: 1.1;
+  font-size: 100%;
+  overflow: auto;
+  display: block;
+  padding-top: 0.5em;
+  margin-bottom: 20px;
+  margin-left: 1em;
+  /* ← adds 1em space from left */
+  height: 100%;
+  position: relative;
+  /* ← 追加：子要素の基準となる */
+}
+
+.horizontal-keypoints-block::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  /* 上端の位置を要素の高さの 10% に設定 */
+  bottom: 0%;
+  /* 下端の位置を要素の高さの 90% (上端から 100% - 10%) に設定 */
+  right: 0;
+  width: 1px;
+  /* ボーダーの幅 */
+  background-color: black;
+  /* ボーダーの色 */
+}
+
+.horizontal-keypoints-block .block-header,
+.horizontal-keypoints-block-no-border .block-header {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 0em;
+  max-width: 100%;
+  margin-right: 0em;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  /* 水平方向中央揃え */
+  align-items: center;
+  /* 垂直方向中央揃え */
+}
+
+.horizontal-keypoints-block .block-header i,
+.horizontal-keypoints-block-no-border .block-header i {
+  padding-right: 0.5rem;
+}
+
+.horizontal-keypoints-block .block,
+.horizontal-keypoints-block-no-border .block {
+  padding-left: 1em;
+  padding-right: 0.5em;
+}
+
+/* ------------------------------------------------------------------- */
+/*                          messages                                   */
+/* ------------------------------------------------------------------- */
+.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.custom-list li {
+  font-size: 0.85em !important;
+}
+
+.custom-list li::before {
+  content: "";
+  margin-right: 4px;
+  margin-left: -0.1em;
+}
+
+/* ------------------------------------------------------------------- */
+/*                     listed item setup                               */
+/* ------------------------------------------------------------------- */
+.checkmark_none,
+.checkmark {
+  display: block;
+}
+
+.checkmark_none ul {
+  list-style-type: square !important;
+  padding-left: 0em;
+}
+
+.checkmark ul {
+  list-style: none;
+  padding-left: 0em;
+}
+
+.checkmark_none ul li,
+.checkmark ul li {
+  display: list-item;
+}
+
+
+
+
+
+.checkmark ul>li::before {
+  content: "✔";
+  margin-left: -1em;
+  margin-right: 0.15em;
+  /* ← space after the checkmark */
+  display: inline-block;
+  /* Keeps the checkmark inline with text */
+}
+
+.checkmark_none ul>li::before {
+  content: none;
+  margin-left: -1em;
+  margin-right: 0.15em;
+  /* ← space after the checkmark */
+  display: inline-block;
+  /* Keeps the checkmark inline with text */
+}
+
+.checkmark ul li ul li {
+  list-style-type: disc !important;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding-left: 0em;
+  /* Indentation for bullets */
+  margin-top: 0.25em !important;
+}
+
+.checkmark ul li ul li::before {
+  content: none;
+  /* Remove custom checkmark */
+  display: none;
+}
+
+.squaredmark {
+  display: block;
+}
+
+.squaredmark ul {
+  list-style: square;
+  padding-left: 0em;
+}
+
+
+.squaredmark ul>li::marker {
+  color: $brand-primary;
+  /* 四角バレットの色 */
+  font-size: 1.2em;
+  /* サイズ調整も可能 */
+}
+
+.squaredmark ul li {
+  display: list-item;
+}
+
+.squaredmark ul>li::before {
+  margin-left: -1em;
+  margin-right: 0.15em;
+  /* ← space after the squaredmark */
+  display: inline-block;
+  /* Keeps the squaredmark inline with text */
+}
+
+.squaredmark ul li ul li {
+  list-style-type: disc !important;
+  font-size: inherit;
+  line-height: inherit;
+  color: none;
+  padding-left: 0em;
+  /* Indentation for bullets */
+  margin-top: 0.25em !important;
+}
+
+.squaredmark ul li ul li::before {
+  content: none;
+  /* Remove custom squaredmark */
+  display: none;
+}
+
+.squaredmark ul li ul>li::marker {
+  color: $brand-text;
+}
+
+
+
+
+.book-info ul li ul {
+  list-style: disc;
+  /* Reveal default: • */
+}
+
+
+/* ------------------------------------------------------------------- */
+/*                          custom table                               */
+/* ------------------------------------------------------------------- */
+.yaml2table {
+  width: 100%;
+}
+
+.yaml2table-custom-top {
+  height: 100%;
+  width: 100%;
+}
+
+.yaml2table-custom-top td {
+  vertical-align: top !important;
+}
+
+.yaml2table-custom-top td[rowspan] {
+  vertical-align: middle !important;
+}
+
+.yaml2grouptable-custom-top,
+.yaml2table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 10px 5px;
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+
+.yaml2grouptable-custom-top td {
+  vertical-align: top !important;
+  border: none !important;
+  background-color: transparent;
+}
+
+.yaml2grouptable-custom-top td[rowspan] {
+  vertical-align: top !important;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  border: none !important;
+  background-color: transparent;
+}
+
+
+
+.custom-table,
+.custom-table-no-header,
+.custom-table-for-analysis-summary {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 10px 5px;
+  margin-bottom: 40px;
+  font-size: 1em !important;
+  border-radius: 10px;
+}
+
+.custom-table caption,
+.custom-table-no-header caption,
+.custom-table-for-analysis-summary caption {
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+/* Apply black border the header cells */
+.custom-table thead tr,
+.yaml2grouptable-custom-top thead tr,
+.custom-table-no-header thead tr,
+.custom-table-for-analysis-summary thead tr {
+  border-bottom: 2px solid $brand-text;
+}
+
+.custom-table th:first-child {
+  text-align: center !important;
+  padding-left: 0em !important;
+}
+
+.custom-table-no-header th:first-child {
+  visibility: hidden;
+  /* Optionally use display: none to remove completely */
+  padding-left: 0em !important;
+}
+
+.custom-table-for-analysis-summary thead tr {
+  display: none;
+}
+
+.custom-table td,
+.custom-table-no-header td,
+.custom-table-for-analysis-summary td {
+  padding-top: 0.2em !important;
+  padding-bottom: 0.1em !important;
+  padding-right: 0.5em !important;
+  padding-left: 0.8em !important;
+  vertical-align: middle;
+  border: none !important;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+.custom-table th,
+.custom-table-no-header th,
+.yaml2grouptable-custom-top th,
+.custom-table-for-analysis-summary th {
+  padding-left: 0.4em !important;
+  background-color: transparent;
+  color: $brand-text;
+  font-weight: bold !important;
+  text-align: left !important;
+  font-size: 1.1em !important;
+}
+
+/* Dotted separation between rows */
+.custom-table tr,
+.yaml2grouptable-custom-top tr,
+.custom-table-no-header tr,
+.custom-table-for-analysis-summary tr {
+  border-bottom: 1.5px solid $muted-gray;
+  /* Dotted line separating rows */
+}
+
+/* Remove bottom border on the last row of any nested tables */
+.custom-table table tr td table tr:last-child,
+.custom-table-no-header table tr td table tr:last-child,
+.custom-table-for-analysis-summary table tr td table tr:last-child {
+  border-bottom: none !important;
+  /* Remove border for the last row in nested tables */
+}
+
+/* Set white background for any <td> that is part of a rowspan */
+.custom-table td[rowspan],
+.custom-table-no-header td[rowspan],
+.custom-table-for-analysis-summary td[rowspan] {
+  background-clip: content-box;
+  background-color: $brand-primary;
+  /* Dark blue background for cells within rowspan */
+  /* background-image: linear-gradient(to top,
+      transparent 0,
+      transparent 0.2em,
+      #0e3666 0.2em,
+      #0e3666 calc(100% - 0.2em),
+      transparent calc(100% - 0.2em),
+      transparent 100%);
+  White background for cells within rowspan */
+  color: #ffffffff;
+  /* Optional: Change text color for contrast */
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  padding-right: 20px !important;
+  padding-left: 0px !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  font-size: 1.1em;
+}
+

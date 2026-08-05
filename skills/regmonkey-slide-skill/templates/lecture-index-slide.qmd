@@ -1,0 +1,102 @@
+<!-- サイドバーカードのタイトル・アイコンは deck の性質に応じて差し替える
+  Lecture系   : 対象レベル(person) / 前提知識(book) / 必要環境(terminal)
+  ガイドライン系: モチベーション(chat-square-text) / Goal(bullseye) / 前提条件(book)
+  分析・リサーチ系: 背景・課題(search) / 目的(bullseye) / 前提・制約(exclamation-triangle)
+-->
+## Index {.regmonkey-index-slide-no-title}
+
+::::: {.columns}
+
+{{< reveal_vspace 3em >}}
+
+:::: {.column width="30%"}
+
+{{< reveal_vspace 0.5em >}}
+
+:::: {.sidebar}
+
+::::{.component-card-index .pl-4 .pr-4 .pt-1 .pb-6 .border-blue-500}
+
+:::{.flex .items-center .mb-2}
+
+{{< bi person size=1.7em color=#428CE6 >}}
+
+### 対象レベル
+
+:::
+
+- 想定する受講者像を1〜2行で（例：データ分析の初学者・実務1年目）
+
+::::
+
+{{< reveal_vspace 1em >}}
+
+::::{.component-card-index .pl-4 .pr-4 .pt-1 .pb-6 .border-blue-500}
+
+:::{.flex .items-center .mb-2}
+
+{{< bi book size=1.7em color=#428CE6 >}}
+
+### 前提知識
+
+:::
+
+- 受講前に押さえておきたい知識を箇条書きで（例：Python基礎・基本的な統計用語）
+
+::::
+
+{{< reveal_vspace 1em >}}
+
+::::{.component-card-index .pl-4 .pr-4 .pt-1 .pb-6 .border-blue-500}
+
+:::{.flex .items-center .mb-2}
+
+{{< bi terminal size=1.7em color=#428CE6 >}}
+
+### 必要環境
+
+:::
+
+- 受講に必要なツール・バージョンを記載（例：Python 3.11+・Jupyter・git）
+
+::::
+
+::::
+::::
+
+::: {.column width="70%" style="padding-left:1em;"}
+::: {.regmonkey_index style="width:1100px"}
+
+```yaml
+regmonkey_index:
+  title_fontsize: 1.3em
+  bullet_fontsize: 0.7em
+  children:
+    - title: 1. セクション名
+      description:
+        - このセクションで扱うトピックを1行で
+        - 受講者が得られる学びを1行で
+      width: [28, 72]
+    - title: 2. セクション名
+      description:
+        - <strong>対象</strong>：扱う範囲
+        - <strong>手法</strong>：使う手法・ツール
+      width: [28, 72]
+    - title: 3. セクション名
+      description:
+        - 主要なポイントを1行で
+        - 補足を1行で
+      width: [28, 72]
+    - title: 4. セクション名
+      description:
+        - 応用・発展の方向性を1行で
+      width: [28, 72]
+    - title: 5. Appendix
+      description:
+        - 参考資料・追加リソースを記載
+      width: [28, 72]
+```
+
+:::
+:::
+:::::

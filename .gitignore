@@ -1,0 +1,72 @@
+# ------------------------------------------------
+# Author: Ryo Nakagami
+# Revised: 2026-08-06
+# File: Quarto slides module .gitignore
+# Description:
+#   Minimal .gitignore for Quarto slides extension projects.
+#   Ignores:
+#     - Sandbox / temporary directories
+#     - Environment files
+#     - Cache and temporary files
+#     - Logs
+#     - Quarto generated content
+#     - Node / Python tooling artifacts
+# ------------------------------------------------
+
+# ---- Temporary / sandbox directories ----
+sandbox/
+tmp/
+
+# ---- Environment / sensitive files ----
+.env
+env/
+ENV/
+env.bak/
+config/
+*.gpg
+
+# ---- Cache / temporary files ----
+.DS_Store
+*.swp
+*~
+*.tmp
+*.bak
+*.old
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- Quarto generated files ----
+# (unanchored: also covers example project renders, e.g. example/_site/)
+_site/
+_freeze/
+.quarto/
+**/*.quarto_ipynb
+**/*.quarto_ipynb_*
+
+# ---- Quarto Lua extension tooling ----
+# Quarto-generated lua LSP config (machine-specific paths)
+.luarc.json
+
+# ---- Node ----
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# ---- Python ----
+.venv
+.python-version
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints
+
+# ---- Pictures ----
+/_embed/
+
+# ---- Optional: BFG Repo-Cleaner artifacts ----
+.bfg/
+..bfg-report
+bfg_check_list/
+
+/.luarc.json

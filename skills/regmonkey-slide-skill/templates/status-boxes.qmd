@@ -1,0 +1,41 @@
+## <スライドタイトル>
+
+{{< reveal_vspace 0.5em >}}
+
+:::{.success-box}
+[実現できること]{.info-box-title}
+:::{.info-contents .padding-left-05}
+- できる項目1
+- できる項目2
+:::
+:::
+
+{{< reveal_vspace 0.5em >}}
+
+:::{.warning-box}
+[注意点]{.info-box-title}
+:::{.info-contents .padding-left-05}
+- 気をつけるべき項目1
+- 気をつけるべき項目2
+:::
+:::
+
+{{< reveal_vspace 0.5em >}}
+
+:::{.caution-box}
+[技術上の課題]{.info-box-title}
+:::{.info-contents .padding-left-05}
+- 課題1
+- 課題2
+:::
+:::
+
+{{< reveal_vspace 0.5em >}}
+
+:::{.danger-box}
+[アンチパターン]{.info-box-title}
+:::{.info-contents .padding-left-05}
+- やってはいけない項目1
+- やってはいけない項目2
+:::
+:::

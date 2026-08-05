@@ -1,0 +1,28 @@
+---
+title: "サンプルデッキ"
+subtitle: "regmonkey-quarto-slides 動作確認"
+author: "Your Name"
+date: today
+filters:
+  - reveal-auto-agenda
+  - regmonkey_slide_editing
+auto-agenda:
+  bullets: bullets
+---
+
+# はじめに
+
+## このデッキが表示されれば配線は完了 {{< fas check >}}
+
+:::{.info-box}
+:::{.info-box-title}
+確認ポイント
+:::
+- 1600×900 キャンバス・Meiryo フォントが適用されている
+- H1 ごとにアジェンダスライドが自動生成されている
+- このボックス（info-box）にテーマのスタイルが当たっている
+:::
+
+{{< reveal_vspace 1em >}}
+
+数式も確認：$y = \beta_0 + \beta_1 x + \varepsilon$

@@ -1,0 +1,32 @@
+## <スライドの結論を1文で>
+
+[サブメッセージを1文で(任意)]{.h2-submessage}
+
+{{< reveal_vspace 0.5em >}}
+
+:::{.info-box}
+
+{{< reveal_vspace 0.25em >}}
+
+:::{.info-contents .font-10 .padding-left-05 .lh-12}
+
+- 1点目を一文で。重要語は [ハイライト]{.regmonkey-bold} する
+- 2点目を一文で
+  - 補足や根拠は子レベルで
+
+:::
+
+:::
+
+{{< reveal_vspace 0.3em >}}
+
+[補足セクション]{.mini-section}
+
+{{< reveal_vspace 0.25em >}}
+
+:::{.font-09}
+
+- 補足の本文
+- 補足の本文
+
+:::

@@ -1,0 +1,13 @@
+---
+title: "<H2の上にくるスライド/posts全体のタイトルを1文で>"
+subtitle: "<シリーズ名・サブタイトル>"
+author: "Ryo Nakagami"
+date: "YYYY-MM-DD"
+categories: [<tag1>, <tag2>]
+slide-number: true
+filters:
+  - reveal-auto-agenda
+  - regmonkey_slide_editing
+auto-agenda:
+  bullets: bullets
+---

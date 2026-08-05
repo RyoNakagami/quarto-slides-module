@@ -1,0 +1,147 @@
+
+/* ------------------------------------------------------------------- */
+/*                      Regmonkey Manuals                              */
+/* ------------------------------------------------------------------- */
+.manual-template {
+  display: flex;
+  flex-direction: column;
+  /* 横方向に並べる */
+
+}
+
+.manual-template .step {
+  display: block;
+}
+
+.manual-template .step:first-child {
+  margin-left: 0.5em !important;
+  /* 左端を強制的に揃える */
+}
+
+.manual-template .step-number {
+  background-color: #003366;
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-right: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.manual-template .step-title {
+  display: flex;
+  font-weight: bold;
+  padding-left: 0em;
+  font-size: 1.1em;
+}
+
+.active-phase-sm {
+  height: 2.5em;
+}
+.active-phase-sm:before {
+  margin-top: -1.25em !important;
+  border-width: 1.25em 1.25em 1.25em 1em !important;
+}
+.active-phase-sm:after {
+  margin-top: -1.25em !important;
+  border-width: 1.25em 0em 1.25em 1em !important;
+  right: -0.9821em !important;
+}
+
+
+/* ------------------------------------------------------------------- */
+/*                      Regmonkey Timeline                             */
+/* ------------------------------------------------------------------- */
+
+.regmonkey-timeline-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: $brand-text;
+  line-height: 1;
+  margin-top: 0;
+  /* Adjust margins as needed */
+  padding-bottom: 0em;
+  /* Add some space below the border */
+}
+
+.regmonkey-timeline-content-block,
+.regmonkey-timeline-content-block ul,
+.regmonkey-timeline-content-block ul li {
+  font-size: 0.95em !important;
+}
+
+.regmonkey-timeline-opposite {
+  color: #206f83;
+  font-weight: bold !important;
+  /*Mckinsey green*/
+}
+
+/* Vuetify's .v-application / .v-application__wrap defaults to min-height: 100vh,
+   which inflates the timeline block to the full slide height (~900px) and
+   pushes footer/footnotes off the page in print-pdf mode. Let the wrapper
+   shrink to the actual v-container height instead. */
+.vuetify-timeline-container .v-application,
+.vuetify-timeline-container .v-application__wrap {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+.vuetify-timeline-container .v-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+.v-timeline--horizontal .v-timeline-divider__before {
+  height: 3px;
+  inset-inline-end: -12px;
+  inset-inline-start: auto;
+  width: calc(var(--v-timeline-line-size-base) + 12px - var(--v-timeline-line-inset));
+  background: $dark-gray;
+}
+
+
+.v-timeline--horizontal .v-timeline-divider__after {
+  height: 3px;
+  inset-inline-end: -12px;
+  inset-inline-start: auto;
+  width: calc(var(--v-timeline-line-size-base) + 12px - var(--v-timeline-line-inset));
+  background: $dark-gray;
+}
+
+/* ------------------------------------------------------------------- */
+/*                      Regmonkey Gantt                                */
+/* ------------------------------------------------------------------- */
+.gantt-chart-inject {
+  overflow-x: auto;
+  overflow-y: auto;
+  /* 縦スクロールも有効に */
+  max-height: 900px;
+  /* 必要なら高さ制限をつける */
+}
+
+
+
+.stat-number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #206f83;
+  font-size: 64px;
+}
+
+.slide-container+.slide-container::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #d1d5db;
+  /* Tailwind gray-300 */
+  margin: 2rem 0;
+  /* 上下マージン */
+}
+

@@ -1,0 +1,44 @@
+## Summary
+
+{{< reveal_vspace 1.0em >}}
+
+::::{.custom-table style="width:100%; height:80%; font-size: 0.9em !important;"}
+:::{.yaml2table .yaml2table-custom-top #yaml-tidy-table data-col-widths="[15, 30, 55]"}
+
+```yaml
+record1:
+  category: <カテゴリ名（短く．長ければ <br> で改行）>
+  rule:
+    - <この行の主原則を1文で．<span class="regmonkey-bold">強調語</span> を使ってよい>
+  actions:
+    - <主原則を満たすための具体アクション1>
+    - <主原則を満たすための具体アクション2>
+    - <主原則を満たすための具体アクション3>
+
+record2:
+  category: <カテゴリ名>
+  rule:
+    - <主原則>
+  actions:
+    - <Use when ...> 形式や <code>command</code> なども可
+    - <アクション>
+
+record3:
+  category: <カテゴリ名>
+  rule:
+    - <主原則>
+  actions:
+    - <アクション>
+    - <アクション>
+
+record4:
+  category: <カテゴリ名>
+  rule:
+    - <主原則>
+  actions:
+    - <アクション>
+    - <アクション>
+```
+
+:::
+::::

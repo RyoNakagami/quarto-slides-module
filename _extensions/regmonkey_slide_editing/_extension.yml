@@ -1,0 +1,9 @@
+title: slide toolkit for revealjs
+author: Ryo Nakagami
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  filters:
+    - spanify.lua
+  shortcodes:
+    - fasicons.lua

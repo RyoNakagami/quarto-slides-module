@@ -1,0 +1,7 @@
+# notebook/ 以下の全 qmd に適用される（flat 配置・per-deck ディレクトリ配置の両対応）
+format:
+  slides-revealjs: default
+  # footer を変えたい場合は以下のように override する：
+  # slides-revealjs:
+  #   footer: "My Project"
+freeze: auto

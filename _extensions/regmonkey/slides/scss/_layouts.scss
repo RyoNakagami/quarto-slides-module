@@ -1,0 +1,1105 @@
+/* ------------------------------------------------------------------- */
+/*                          Pentagon Boxes                             */
+/* ------------------------------------------------------------------- */
+
+.pentagon-box-400 {
+  position: relative;
+  width: 95%;
+  height: 400px;
+  background-color: #ffffff;
+  border-right: transparent 0px solid;
+  border-left: $brand-primary 4px solid;
+  border-top: $brand-primary 4px solid;
+  border-bottom: $brand-primary 4px solid;
+  padding-left: 1.5em;
+}
+
+.pentagon-box-400::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* 親の右端に配置 */
+  width: 130px;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 620"><polygon points="0,0 100,300 0,620" fill="white" stroke="none"/><polyline points="0,0 100,300 0,620" fill="none" stroke="%230e3666" stroke-width="8"/></svg>') no-repeat;
+  z-index: 9999;
+  /* 他の要素より前に */
+}
+
+.square-box-400 {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  border: 4px solid $brand-primary;
+  padding-left: 2em;
+}
+
+.pentagon-box-500 {
+  position: relative;
+  width: 95%;
+  height: 500px;
+  background-color: #ffffff;
+  border-right: transparent 0px solid;
+  border-left: $brand-primary 4px solid;
+  border-top: $brand-primary 4px solid;
+  border-bottom: $brand-primary 4px solid;
+  padding-left: 1em;
+}
+
+.pentagon-box-500::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* 親の右端に配置 */
+  width: 165px;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 620"><polygon points="0,0 80,300 0,620" fill="white" stroke="none"/><polyline points="0,0 80,300 0,620" fill="none" stroke="%230e3666" stroke-width="4"/></svg>') no-repeat;
+  z-index: 9999;
+  /* 他の要素より前に */
+}
+
+
+
+
+.square-box-500 {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: 4px solid $brand-primary;
+  padding-left: 2em;
+}
+
+
+.pentagon-box-550 {
+  position: relative;
+  width: 95%;
+  height: 550px;
+  background-color: #ffffff;
+  border-right: transparent 0px solid;
+  border-left: $brand-primary 4px solid;
+  border-top: $brand-primary 4px solid;
+  border-bottom: $brand-primary 4px solid;
+  padding-left: 1em;
+}
+
+.pentagon-box-550::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* 親の右端に配置 */
+  width: 180px;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 620"><polygon points="0,0 80,300 0,620" fill="white" stroke="none"/><polyline points="0,0 80,300 0,620" fill="none" stroke="%230e3666" stroke-width="4"/></svg>') no-repeat;
+  z-index: 9999;
+  /* 他の要素より前に */
+}
+
+.square-box-550 {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  border: 4px solid $brand-primary;
+  padding-left: 2em;
+}
+
+.pentagon-box-600 {
+  position: relative;
+  width: 95%;
+  height: 600px;
+  background-color: #ffffff;
+  border-right: transparent 0px solid;
+  border-left: $brand-primary 4px solid;
+  border-top: $brand-primary 4px solid;
+  border-bottom: $brand-primary 4px solid;
+  padding-left: 1.5em;
+}
+
+.pentagon-box-600::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* 親の右端に配置 */
+  width: 200px;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 620"><polygon points="0,0 80,300 0,620" fill="white" stroke="none"/><polyline points="0,0 80,300 0,620" fill="none" stroke="%230e3666" stroke-width="4"/></svg>') no-repeat;
+  z-index: 9999;
+  /* 他の要素より前に */
+}
+
+.square-box-600 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border: 4px solid $brand-primary;
+  padding-left: 2em;
+}
+
+.pentagon-box-700 {
+  position: relative;
+  width: 95%;
+  height: 700px;
+  background-color: #ffffff;
+  border-right: transparent 0px solid;
+  border-left: $brand-primary 4px solid;
+  border-top: $brand-primary 4px solid;
+  border-bottom: $brand-primary 4px solid;
+  padding-left: 1.5em;
+}
+
+.pentagon-box-700::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* 親の右端に配置 */
+  width: 240px;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 810"><polygon points="0,0 100,400 0,810" fill="white" stroke="none"/><polyline points="0,0 100,400 0,810" fill="none" stroke="%230e3666" stroke-width="4"/></svg>') no-repeat;
+  z-index: 9999;
+  /* 他の要素より前に */
+}
+
+.square-box-700 {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  border: 4px solid $brand-primary;
+  padding-left: 2em;
+}
+
+
+/* ------------------------------------------------------------------- */
+/*                          Sections                                   */
+/* ------------------------------------------------------------------- */
+.section-header {
+  font-weight: bold;
+  font-size: 1em;
+  color: $brand-text;
+  line-height: 1;
+  display: block;
+  position: relative;
+}
+
+.section-header::before {
+  content: "▶\00A0";
+  position: relative;
+  display: inline-block;
+}
+
+.mini-section-bare,
+.mini-section {
+  font-weight: bold;
+  font-size: 1em;
+  color: $brand-text;
+  line-height: 1;
+  display: block;
+  position: relative;
+}
+
+.mini-section::before {
+  content: "▶\00A0";
+  position: relative;
+  display: inline-block;
+}
+
+/* ------------------------------------------------------------------- */
+/*                             summary                                 */
+/* ------------------------------------------------------------------- */
+
+.summary-container {
+  line-height: 1.1;
+  width: 100%;
+  height: 75%;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  /* ブロックを縦に並べる */
+  justify-content: center;
+  /* 全体を縦方向中央に揃える（親の高さ次第） */
+}
+
+/* ------------------------------------------------------------------- */
+/*                             mathjax                                 */
+/* ------------------------------------------------------------------- */
+
+.def-block {
+  margin-top: 0.3rem;
+  padding-top: 0em;
+  padding-bottom: 0.05rem;
+  margin-bottom: 0.3rem;
+  display: block !important;
+  align-items: center;
+  text-align: left;
+  padding-left: 1em;
+  line-height: 1.1;
+  position: relative;
+  /* Needed for positioning the pseudo-element */
+}
+
+.def-block::before {
+  content: "";
+  position: absolute;
+  top: 0em;
+  /* Start 5% from the top to cover the top 90% */
+  left: 0;
+  width: 0.4em;
+  /* Same width as your intended border-left */
+  bottom: 0em;
+  /* End 2em from the bottom */
+  background-color: $accent-blue;
+  /* Your desired border color */
+}
+
+.def-block ul.task-list li input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+  margin: 0 0.5em 0em -1em;
+  vertical-align: middle;
+}
+
+.def-block .def-contents {
+  font-size: 0.8em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.reveal .slide .def-block ul,
+.reveal .slide .def-block ol {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 1em;
+}
+
+.def-block .theorem-title,
+.def-block .def-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: $brand-text;
+  line-height: 1;
+  margin-top: 0;
+  /* Adjust margins as needed */
+  padding-bottom: 0em;
+  /* Add some space below the border */
+}
+
+.theorem-title+.def-title::before {
+  content: ": ";
+  position: relative;
+}
+
+
+/* ------------------------------------------------------------------- */
+/*                        general editting                             */
+/* ------------------------------------------------------------------- */
+.regmonkey-bold {
+  color: #206f83;
+  font-weight: bold !important;
+  /*Mckinsey green*/
+}
+
+.border-bottom {
+  border-bottom: 0.2rem solid $brand-text;
+  /* 線の色と太さを調整 */
+  padding-bottom: 0.2em;
+  /* 少し余白を足すと見やすくなる */
+  margin-bottom: 0.5em;
+  /* 次の要素とのスペースも確保 */
+  width: 97.5%;
+  display: block;
+}
+
+.border-bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.2rem solid $brand-text;
+  /* 線の色と太さを調整 */
+  padding-bottom: 0.2em;
+  /* 少し余白を足すと見やすくなる */
+  margin-bottom: 0.5em;
+  /* 次の要素とのスペースも確保 */
+  width: 97.5%;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.border-bottom-header-left {
+  display: flex;
+  border-bottom: 0.2rem solid $brand-text;
+  /* 線の色と太さを調整 */
+  /* 少し余白を足すと見やすくなる */
+  margin-bottom: 0.5em;
+  /* 次の要素とのスペースも確保 */
+  width: 97.5%;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.topleftbox {
+  position: absolute;
+  top: -1.6em;
+  left: 0.2em;
+  font-size: 0.8em;
+  font-family: $font-meiryo !important;
+  /* (optional) change font family */
+  text-align: left !important;
+  background-color: #1e90ff;
+  /* Bright Orange for title */
+  color: #ffffffff;
+  font-weight: bold !important;
+  padding: 0.05em 0.2em;
+  align-items: center;
+  font-weight: bold;
+}
+
+.message-box {
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border: 2px solid $brand-text;
+  border-radius: 0px;
+  background-color: transparent;
+  line-height: 1.1;
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+.message-box-no-border {
+  display: inline-block;
+  padding: 0.2em 0em;
+  background-color: transparent;
+  line-height: 1.1;
+}
+
+.centered-column-wrapper {
+  display: flex;
+  align-items: center;
+  /* vertical centering */
+  justify-content: center;
+  /* horizontal centering */
+  height: 100vh;
+  /* or set to the desired container height */
+}
+
+.centered-column-wrapper>.column {
+  text-align: center;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/*                       component card                                */
+/* ------------------------------------------------------------------- */
+
+.component-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.component-card-for-analysis-summary {
+  background: white;
+  border-radius: 8px;
+  font-size: 0.9em;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.component-card-index {
+  background: white;
+  border-radius: 8px;
+  font-size: 0.8em;
+  border: #0a1e3d 2px solid;
+}
+
+.component-card-index .title {
+  margin-left: 0.5em;
+  /* (optional) change font family */
+  text-align: left !important;
+  color: $brand-text;
+  /* Bright Orange for title */
+  font-weight: bold !important;
+  font-size: var(--r-heading3-size);
+}
+
+
+/* ------------------------------------------------------------------- */
+/*                       message card                                  */
+/* ------------------------------------------------------------------- */
+/* 事業コンセプト・採用ポジション等の紹介カード:
+   セクションラベル + 紺色見出しバー + 箇条書き本文 + フッター注記 */
+
+.message-card {
+  display: block;
+  background: white;
+  border: 1px solid $divider-gray;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.message-card .message-card-label {
+  display: block;
+  background: $divider-gray;
+  color: $brand-text;
+  font-weight: bold;
+  font-size: 0.7em;
+  padding: 0.3em 1em;
+}
+
+.message-card .message-card-title {
+  display: block;
+  background: $brand-primary;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.2;
+  padding: 0.25em 1em;
+}
+
+/* 見出しバー直前のセクションラベルを省く場合,
+   上端の隙間をなくしてバーをカード上端に密着させる */
+.message-card .message-card-title-no-margin {
+  display: block;
+  background: $brand-primary;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.2;
+  margin: 0 !important;
+  padding: 0.25em 1em;
+}
+
+/* span (label / title) がラップされる <p> の余白を消し,
+   各バーをカードにぴったり付ける */
+.message-card-title-no-margin > p {
+  margin: 0.2em !important;
+}
+
+.message-card .message-card-body {
+  padding: 0.6em 1.2em 0.4em 1.2em;
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+.message-card .message-card-body ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.message-card .message-card-footer {
+  border-top: 1px solid $divider-gray;
+  color: $dark-gray;
+  font-size: 0.72em;
+  line-height: 1.3;
+  padding: 0.4em 1.2em 0.5em 1.2em;
+}
+
+
+/* message-card 内のステップフロー: 矢羽同士に適度な隙間を空ける */
+.message-card .step {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* 矢羽本体と矢印三角(:after)の継ぎ目に出る縦線を消す.
+   サブピクセル丸めで隙間が出ても, 本体右端に太い border-right(本体色)を
+   敷いて継ぎ目を物理的に覆い隠す. box-sizing:border-box なので幅は不変.
+   border 色は各 phase の塗り色に合わせる. */
+.message-card .active-phase {
+  border-right: 2px solid $brand-primary;
+}
+
+.message-card .danger-phase {
+  border-right: 2px solid $danger-red;
+}
+
+.message-card .outline-phase {
+  border-right: 2px solid #e3eaf3;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/*                          info box                                   */
+/* ------------------------------------------------------------------- */
+
+.info-box-bare,
+.info-box {
+  margin-top: 0.3rem;
+  background-color: #e8f1fe;
+  padding-top: 0.025em;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+  display: block !important;
+  align-items: center;
+  text-align: left;
+  padding-left: 1em;
+  line-height: 1;
+  position: relative;
+  /* Needed for positioning the pseudo-element */
+  font-size: 0.9em;
+}
+
+
+.info-box::before {
+  content: "";
+  position: absolute;
+  top: 0em;
+  /* Start 5% from the top to cover the top 90% */
+  left: 0;
+  width: 0.4em;
+  /* Same width as your intended border-left */
+  bottom: 0em;
+  /* End 2em from the bottom */
+  background-color: $accent-blue;
+  /* Your desired border color */
+}
+
+.info-box-bare-title,
+.info-box-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: $brand-text;
+  line-height: 1;
+  margin-top: 0;
+  /* Adjust margins as needed */
+  padding-bottom: 0em;
+  /* Add some space below the border */
+}
+
+.info-box-bare-title .info-content,
+.info-box .info-contents {
+  font-size: 0.8em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* ---- status boxes (success / warning / caution / danger) ---------- */
+
+.success-box,
+.warning-box,
+.caution-box,
+.danger-box {
+  margin-top: 0.3rem;
+  padding-top: 0.025em;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+  display: block !important;
+  align-items: center;
+  text-align: left;
+  padding-left: 1em;
+  line-height: 1;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.success-box {
+  background-color: #e6f4ea;
+}
+
+.warning-box {
+  background-color: #fef7e0;
+}
+
+.caution-box {
+  background-color: #fff3e0;
+}
+
+.danger-box {
+  background-color: #fde8e8;
+}
+
+.success-box::before,
+.warning-box::before,
+.caution-box::before,
+.danger-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.4em;
+  bottom: 0;
+}
+
+.success-box::before {
+  background-color: #1e8e3e;
+}
+
+.warning-box::before {
+  background-color: #f9ab00;
+}
+
+.caution-box::before {
+  background-color: #e8710a;
+}
+
+.danger-box::before {
+  background-color: #d93025;
+}
+
+/* ------------------------------------------------------------------- */
+/*                            tool grid                                */
+/* ------------------------------------------------------------------- */
+.tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.tools-column {
+  padding: 0.5em 1em;
+}
+
+.column-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $brand-text;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.tool-icon {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1.4em;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+  border-bottom: 1.5px solid $divider-gray;
+  font-size: 1em;
+  text-align: left;
+}
+
+.tool-description {
+  font-size: 0.8em;
+  color: #718096;
+  margin-top: 0.5em;
+}
+
+.before-title {
+  color: #e53e3e !important;
+}
+
+.after-title {
+  color: $brand-primary;
+}
+
+.tools-column-after {
+  background: #f7fafc;
+  border-radius: 0.8em;
+  border: 2px solid #e2e8f0;
+}
+
+.tool-name {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.integration-arrow {
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+  color: $accent-blue;
+}
+
+/* ------------------------------------------------------------------- */
+/*                        hop step jump                                */
+/* ------------------------------------------------------------------- */
+.hop-step-jump-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 110 25"  style="transform: rotate(-25deg);"><polygon points="10,22 80,22 80,18 95,25 80,32 80,28 10,28"  fill="%23B4D7FF" opacity="0.25"/></svg>') no-repeat center;
+  background-size: contain;
+}
+
+.hop-step-jump-container-vanilla {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.hop-step-jump-container-vanilla .step,
+.hop-step-jump-container .step {
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  background-color: transparent;
+  border-left: 0.2em solid $mui-blue;
+  background-image: linear-gradient(to right, $mui-blue 71.6%, transparent 71.6%);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% 0.2em;
+  /* Height = thickness of top line */
+  padding-left: 0.2em;
+  padding-bottom: 0.163em;
+  justify-content: unset !important;
+}
+
+.hop-step-jump-container .step-number,
+.hop-step-jump-container-vanilla .step-number {
+  position: absolute;
+  top: -2em;
+  color: $mui-blue;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hop-step-jump-container .step-title,
+.hop-step-jump-container-vanilla .step-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: $brand-text;
+  top: 0;
+  padding-bottom: 0em;
+}
+
+.hop-step-jump-container .step-title p,
+.hop-step-jump-container-vanilla .step-title p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hop-step-jump-container .step-description,
+.hop-step-jump-container-vanilla .step-description {
+  font-size: 0.7em;
+  line-height: 1.1;
+  margin-bottom: 0em;
+  color: $dark-gray;
+  display: block;
+  padding-left: 0.2em;
+}
+
+.hop-step-jump-container .info-card,
+.hop-step-jump-container-vanilla .info-card {
+  margin-top: 0.2em;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* Two-column layout */
+  gap: 0.1em;
+  /* Add spacing between rows and columns */
+}
+
+.hop-step-jump-container .info-label,
+.hop-step-jump-container-vanilla .info-label {
+  font-weight: bold;
+  font-size: 0.7em;
+  width: 4rem;
+}
+
+.hop-step-jump-container .info-content,
+.hop-step-jump-container-vanilla .info-content {
+  text-align: left;
+  font-size: 0.7em;
+  width: 29rem;
+  /* Adjust width to fill the remaining space */
+}
+
+.hop-step-jump-container .info-label p,
+.hop-step-jump-container .info-content p,
+.hop-step-jump-container-vanilla .info-label p,
+.hop-step-jump-container-vanilla .info-content p {
+  margin-bottom: 0.2em;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0.2em;
+}
+
+.hop-step-jump-container .info-label,
+.hop-step-jump-container-vanilla .info-label {
+  display: flex;
+  background-color: $mui-blue;
+  color: white;
+  padding: 0.1em 0.5em;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  /* Horizontal centering */
+}
+
+.hop-step-jump-container .info-content,
+.hop-step-jump-container-vanilla .info-content {
+  display: inline-block;
+  background-color: transparent;
+  padding: 4px 10px;
+  color: $dark-gray;
+}
+
+.hop-step-jump-container .step-1,
+.hop-step-jump-container-vanilla .step-1 {
+  left: 5%;
+  bottom: 0;
+}
+
+.hop-step-jump-container .step-2,
+.hop-step-jump-container-vanilla .step-2 {
+  left: 32.5%;
+  bottom: 30%;
+}
+
+.hop-step-jump-container .step-3,
+.hop-step-jump-container-vanilla .step-3 {
+  left: 60.85%;
+  bottom: 60%;
+}
+
+/* ------------------------------------------------------------------- */
+/*                        basic symbol                                 */
+/* ------------------------------------------------------------------- */
+.step-container {
+  display: flex;
+  overflow: hidden;
+  height: 10em;
+  padding-top: 1em;
+  gap: 4px;
+}
+
+.step {
+  flex: 1 1 0%;
+  /* Evenly distributes space among all steps */
+  max-width: 97.5%;
+  /* Optional: limit max width */
+  min-width: 120px;
+  /* Optional: ensure boxes don't shrink too small */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding-left: 0em;
+  height: 4em;
+}
+
+.step:first-child {
+  margin-left: 0 !important;
+}
+
+.step:first-child .clickable:before {
+  content: none !important;
+}
+
+.step-label {
+  flex-grow: 1;
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  color: #333;
+  text-align: left;
+  font-size: 0.85em;
+  padding: 0.2em 0.4em 0.2em 0.2em;
+  margin-top: 0em;
+  width: 90%;
+  max-height: none;
+  word-wrap: break-word;
+  /* 古いブラウザ用 */
+  overflow-wrap: break-word;
+  /* 現在主流のプロパティ */
+  white-space: normal;
+  /* 折り返しを許可 */
+  display: block;
+  /* ← 確実にブロック要素として扱う */
+  box-sizing: border-box;
+  /* padding も含めて width 計算 */
+  top: 100%;
+  /* 親要素の下に配置 */
+  left: 0;
+}
+
+.past-phase {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 4em;
+  background-color: #dae0e5;
+  color: #444;
+  font-weight: bold;
+  padding: 0 1em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.past-phase:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-width: 2em 0 2em 1em;
+  border-style: solid;
+  border-color: #dae0e5 transparent;
+  left: -1em;
+}
+
+.past-phase:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+  border-left: 1em solid #dae0e5;
+  right: -1em;
+}
+
+.active-phase {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 4em;
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 0em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.active-phase:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-width: 2em 2em 2em 1em;
+  border-style: solid;
+  border-color: $brand-primary transparent;
+  left: -1em;
+}
+
+.active-phase:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-width: 2em 0em 2em 1em;
+  border-style: solid;
+  border-color: transparent $brand-primary;
+  right: -0.9821em;
+}
+
+/* danger-phase: 重要ステップを赤でハイライトする chevron.
+   .active-phase と同じ形状で塗り色のみ変更. .active-phase-sm と併用. */
+.danger-phase {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 4em;
+  background-color: $danger-red;
+  border-color: $danger-red;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 0em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.danger-phase:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-width: 2em 2em 2em 1em;
+  border-style: solid;
+  border-color: $danger-red transparent;
+  left: -1em;
+}
+
+.danger-phase:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-width: 2em 0em 2em 1em;
+  border-style: solid;
+  border-color: transparent $danger-red;
+  right: -0.9821em;
+}
+
+/* outline-phase: 通常ステップ用の白地＋紺枠線 chevron.
+   塗りつぶさず輪郭線で見せる. .active-phase-sm と併用. */
+.outline-phase {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 4em;
+  background-color: #e3eaf3;
+  color: $brand-primary;
+  font-weight: bold;
+  padding: 0 0em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.outline-phase:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-width: 2em 2em 2em 1em;
+  border-style: solid;
+  border-color: #e3eaf3 transparent;
+  left: -1em;
+}
+
+.outline-phase:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  border-width: 2em 0em 2em 1em;
+  border-style: solid;
+  border-color: transparent #e3eaf3;
+  right: -0.9821em;
+}
+
+/* ------------------------------------------------------------------- */
+/*  Mermaid を親要素（カラム等）の幅いっぱいに拡大表示するためのラッパー  */
+/*  使い方：Mermaid コードブロックを :::{.hotfix-mermaid-wrap} で囲む    */
+/* ------------------------------------------------------------------- */
+.hotfix-mermaid-wrap svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+}
+
+.hotfix-mermaid-wrap .cell-output-display {
+  width: 100% !important;
+}
+
+.hotfix-mermaid-wrap figure,
+.hotfix-mermaid-wrap .quarto-figure {
+  width: 100% !important;
+}

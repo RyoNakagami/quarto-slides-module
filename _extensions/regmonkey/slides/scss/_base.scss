@@ -1,0 +1,421 @@
+
+
+.reveal {
+  font-family: $font-meiryo !important;
+  /* (optional) change font family */
+  font-size: 28px;
+  /* (change the default font size) */
+  line-height: 1.4;
+  /* (optional) adjust line spacing */
+  aspect-ratio: 16 / 9;
+}
+
+.wrap-text {
+  width: 300px;
+  /* Set a fixed width */
+  border: 1px solid $brand-text;
+  padding: 10px;
+  overflow-wrap: break-word;
+  /* Ensure long words break to fit within the width */
+}
+
+.reveal .quarto-title-block h1.title {
+  position: absolute;
+  font-family: $font-meiryo !important;
+  /* (optional) change font family */
+  top: 1.5em;
+  left: 0.2em;
+  font-size: 48pt;
+  /* or you can use px like 50px */
+  text-align: left !important;
+  color: $brand-primary;
+  /* Bright Orange for title */
+}
+
+.reveal .subtitle {
+  position: absolute;
+  top: -160px;
+  left: 0.5em;
+  font-size: 28pt !important;
+  color: $brand-text;
+  text-align: left;
+  display: inline-block;
+  width: 15em;
+  border-bottom: 5px solid $brand-text;
+  padding-left: 0.3em;
+}
+
+.reveal .date {
+  position: absolute;
+  top: 9.5em;
+  left: 0.5em;
+  font-size: 28pt !important;
+  padding-bottom: 0.3em;
+  color: $brand-text;
+  text-align: left;
+}
+
+.reveal .quarto-title-author {
+  position: absolute;
+  padding-top: 0.3em;
+  top: 11em;
+  left: 0rem;
+  font-size: 28pt !important;
+  color: $brand-text;
+  text-align: left;
+}
+
+.reveal .slide-number {
+  position: absolute;
+  bottom: 5px !important;
+  /* Makes footer div flush with bottom of slide */
+  right: 0px !important;
+  /* Makes footer div flush with right of slide */
+  font-size: 0.8em;
+  color: white;
+}
+
+.reveal pre.sourceCode code {
+  max-height: 700px;
+}
+
+div.colored-slide-30 {
+  background: linear-gradient(to right, transparent 65%, $divider-gray 35%);
+  height: 100%;
+  width: 100%;
+}
+
+.reveal h1 {
+  font-family: $font-meiryo !important;
+  /* (optional) change font family */
+  text-align: left;
+  vertical-align: top;
+  top: 0;
+}
+
+.reveal h2 {
+  font-family: $font-meiryo !important;
+  /* (optional) change font family */
+  text-align: left !important;
+  color: $brand-primary;
+  /* Bright Orange for title */
+  font-size: 40pt !important;
+  font-weight: bold !important;
+  padding-bottom: 0em;
+  margin-bottom: 0.05em;
+}
+
+.reveal h3 {
+  font-family: $font-meiryo !important;
+  /* (optional) change font family */
+  text-align: left !important;
+  color: $brand-text;
+  /* Bright Orange for title */
+  font-weight: bold !important;
+}
+
+/* adding footer setup */
+.reveal .slide-menu-button {
+  position: absolute !important;
+  top: 10px !important;
+  /* Distance from top */
+  bottom: unset !important;
+  background-size: 2.2rem !important;
+}
+
+.reveal .slide-chalkboard-buttons {
+  position: absolute !important;
+  /* Absolute positioning */
+  top: 15px;
+  /* Distance from top */
+  left: unset !important;
+  right: 10px !important;
+  /* Distance from right */
+  background-size: 2.2rem !important;
+  /* Adjust the background size of the button */
+  z-index: 1000;
+  /* Ensure it's above other content */
+}
+
+/* ------------------------------------------------------------------- */
+/*                     regmonkey index slide                           */
+/* ------------------------------------------------------------------- */
+
+.regmonkey-index-slide,
+.regmonkey-index-slide-no-title {
+  font-family: 'Meiryo', sans-serif;
+  width: 100%;
+  /* Full slide width */
+  height: 100% !important;
+  /* Full viewport height */
+  /* Change this to whatever color you like */
+  /* Include padding in height */
+}
+
+
+.regmonkey-index-slide-no-title h2 {
+  font-family: $font-meiryo !important;
+  /* (optional) change font family */
+  color: transparent;
+  /* Bright Orange for title */
+  font-size: 0pt !important;
+  padding-bottom: 0em;
+  margin-bottom: 0.0em;
+}
+
+.regmonkey-index-slide .sidebar .sidebar-title,
+.regmonkey-index-slide-no-title .sidebar .sidebar-title {
+  font-size: 1.6em;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  color: #0E3666;
+  font-weight: bold;
+}
+
+.regmonkey-index-slide .sidebar-text,
+.regmonkey-index-slide-no-title .sidebar-text {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.regmonkey-index-slide .numbered-section,
+.regmonkey-index-slide-no-title .numbered-section {
+  position: relative;
+  padding-left: 80px;
+  width: 100%;
+}
+
+.regmonkey-index-slide .number,
+.regmonkey-index-slide-no-title .number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Playfair Display', "MeiryoUI", serif;
+  font-size: 60px;
+  color: #0a1e3d;
+  opacity: 0.8;
+}
+
+.regmonkey-index-slide .section-text,
+.regmonkey-index-slide-no-title .section-text {
+  font-size: 16px;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.regmonkey-index-slide .divider,
+.regmonkey-index-slide-no-title .divider {
+  height: 1px;
+  background-color: $muted-gray;
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------- */
+/*                   regmonkey slide editing                           */
+/* ------------------------------------------------------------------- */
+
+svg.fas {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+}
+
+/* ------------------------------------------------------------------- */
+/*                          footer                                     */
+/* ------------------------------------------------------------------- */
+
+.reveal .footer {
+  background-color: $brand-primary;
+  text-align: left !important;
+  padding-left: 0.5em !important;
+  color: white;
+  font-size: 14px !important;
+  width: 100%;
+  display: block;
+  position: fixed;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  bottom: 0px !important;
+  /* Makes footer div flush with bottom of slide */
+  z-index: 2 !important;
+  /* Sets the footer div further down the z-index */
+}
+
+.reveal .slide aside .aside-footnotes {
+  font-size: 1rem;
+  line-height: 0.5rem;
+  padding-bottom: 0px;
+  color: $brand-text;
+}
+
+.reveal .slide aside .aside-footnotes p {
+  margin: 0px !important;
+  padding: 0px !important;
+  line-height: 1.1em;
+  font-size: 1em;
+}
+
+/* ------------------------------------------------------------------- */
+/*                          MathJax                                    */
+/* ------------------------------------------------------------------- */
+.MathJax_SVG {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 100%;
+  font-size-adjust: none;
+  text-indent: 0;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: sub !important;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/*                          Agenda                                     */
+/* ------------------------------------------------------------------- */
+
+.agenda-slide h1 {
+  display: none;
+}
+
+/* "Agenda" heading injected by reveal-auto-agenda when the deck sets
+   auto-agenda.heading. Styled to match .reveal h2 so it sits at the
+   same position as a normal H2. */
+/* --agenda-* custom properties are injected as inline styles by
+   reveal-auto-agenda.lua when the deck sets auto-agenda options
+   (font-size / item-spacing / line-height / heading-font-size).
+   Fallback values below are the site defaults. */
+.agenda-heading {
+  font-family: $font-meiryo;
+  color: $brand-primary;
+  font-size: var(--agenda-heading-font-size, 40pt);
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0.05em;
+}
+
+.agenda {
+  font-size: var(--agenda-font-size, 26pt);
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.agenda ul,
+.agenda ol {
+  list-style-position: inside;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: var(--agenda-line-height, 1.4);
+}
+
+.agenda li {
+  padding: var(--agenda-item-padding, 0.4em) 0.6em;
+  margin: var(--agenda-item-spacing, 0.3em) 0;
+  color: $brand-text;
+  font-weight: normal;
+}
+
+.agenda li::marker {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.agenda li:has(.agenda-active) {
+  background-color: $brand-primary;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.agenda-active,
+.agenda-inactive,
+.agenda-pre-active,
+.agenda-post-active,
+.agenda-sub-active,
+.agenda-sub-inactive {
+  background: transparent;
+  color: inherit;
+  opacity: 1;
+  display: inline;
+  padding: 0;
+  font-weight: inherit;
+}
+
+.agenda-active p,
+.agenda-inactive p,
+.agenda-pre-active p,
+.agenda-post-active p,
+.agenda-sub-active p,
+.agenda-sub-inactive p {
+  margin: 0;
+  display: inline;
+  color: inherit;
+  font-size: 1.2em;
+}
+
+/* Nested sections (H1 with {.nested}) rendered as indented sub-items */
+.agenda .agenda-subs {
+  font-size: var(--agenda-sub-font-size, 0.8em);
+  font-weight: normal;
+}
+
+.agenda .agenda-subs ul,
+.agenda .agenda-subs ol {
+  margin: 0 0 0 2em;
+}
+
+.agenda .agenda-subs li {
+  padding: calc(var(--agenda-item-padding, 0.4em) * 0.6) 0.6em;
+  margin: calc(var(--agenda-item-spacing, 0.3em) * 0.6) 0;
+}
+
+/* when a nested section is active, the navy band goes to the sub item */
+.agenda .agenda-subs li:has(.agenda-sub-active) {
+  background-color: $brand-primary;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Items that contain nested sections: the navy band must cover only the
+   section-title row, not the sub items. The li itself is therefore never
+   banded — the marker and the band move to the title div instead. */
+.agenda li:has(> .agenda-subs) {
+  list-style: none;
+  padding: 0;
+}
+
+.agenda li:has(> .agenda-subs) > .agenda-active,
+.agenda li:has(> .agenda-subs) > .agenda-inactive {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding: var(--agenda-item-padding, 0.4em) 0.6em;
+}
+
+.agenda li:has(> .agenda-subs):has(> .agenda-active) {
+  background: transparent;
+  color: $brand-text;
+  font-weight: normal;
+}
+
+.agenda li:has(> .agenda-subs) > .agenda-active {
+  background-color: $brand-primary;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.agenda p,
+.agenda .slides section,
+.agenda .slides section > section {
+  line-height: 1.3;
+}

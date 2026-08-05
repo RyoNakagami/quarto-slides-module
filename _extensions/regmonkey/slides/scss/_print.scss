@@ -1,0 +1,65 @@
+
+/* ------------------------------------------------------------------- */
+/*                 Only apply these styles when printing               */
+/* ------------------------------------------------------------------- */
+@media print {
+  body {
+    font-size: 12pt;
+    color: $brand-text;
+    background: white;
+  }
+
+  canvas.leader-line,
+  .leader-line,
+  .leader-line-areaAnchor {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  canvas.leader-line,
+  .leader-line {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .reveal {
+    width: 1600px !important;
+    /* fixed width */
+    height: 900px !important;
+    /* fixed height */
+    box-shadow: none !important;
+    font-size: 28px !important;
+    line-height: 1.4;
+    font-family: "Meiryo UI", "Helvetica", "Arial", sans-serif !important;
+  }
+
+  .reveal .slides {
+    transform: none !important;
+    position: static !important;
+    padding: 0;
+  }
+
+  .reveal .slide {
+    box-shadow: none !important;
+    margin: 0 !important;
+    page-break-after: always;
+  }
+
+  .slide-background,
+  .reveal .controls,
+  .reveal .progress,
+  .reveal .slides section[hidden] {
+    display: none !important;
+  }
+
+  .fragment {
+    display: none !important;
+    /* Optional: hide fragments entirely */
+  }
+
+  .research-paper-style {
+    background: none;
+    color: black;
+  }
+}
+
