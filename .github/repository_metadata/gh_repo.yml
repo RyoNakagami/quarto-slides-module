@@ -1,0 +1,14 @@
+meta-data:
+  repository_name: quarto-slides-module
+  visibility: public
+  org-name: RyoNakagami
+  version: 0.0.0
+  tag:
+    - quarto
+    - qmd
+    - slides
+    - revealjs
+  description: >-
+    Reusable Quarto Reveal.js slide module:
+    mount as a git submodule, render .qmd decks with a unified theme
+  license: mit
